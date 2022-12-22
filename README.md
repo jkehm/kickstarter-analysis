@@ -3,8 +3,15 @@
 ## **Overview of Project**
 ### Purpose
 The purpose of this analysis is to help our friend, Louise, determine the relationship between launch dates and funding goals for a new play. From here we will be able to advise Louise what the most succesful strategy may be for her play, according to the data provided. 
+Louise is trying to understand what key factors to look at when creating her own plan for the play "**_Fever_**".
 ## Analysis and Challenges
 This analysis was performed using Excel, and some of the standard, but very powerful, features that Excel has.
+ * Year() function 
+ * PivotTables
+ * PivotCharts
+ * IFStatement(s) (COUNTIFS() in this case)
+ * SUM()
+
 ### Analysis of Outcomes Based on Launch Date
 Specifically, in Deliverable 1 we utilized the pivot table feature in Excel. 
 We also used the Year() function to convert the raw MM/DD/YYYY format to simpy show the Year, 
@@ -61,10 +68,14 @@ I also chose the wrong style of Graph, which further changed the way the graph l
 
 ## Results
 
-- What are two conclusions you can draw about the Outcomes based on Launch Date?
-
-- What can you conclude about the Outcomes based on Goals?
-
-- What are some limitations of this dataset?
-
-- What are some other possible tables and/or graphs that we could create?
+### 1. What are two conclusions you can draw about the Outcomes based on Launch Date?
+- In general, it looks like time of year does not have a big influence on the likelihood a Theater production fails. 
+- However, there does seem to be more success in the Summer months, specifically May, June, and July when compared to the winter months.
+### 2. What can you conclude about the Outcomes based on Goals?
+Based off of the graph, it looks like it is more likely to have a succesful film, if you do not have an overly ambitious goal. Past a price range of 20,000 it is actually more likely that the outcome will be a failure. Until, 35,000 to 44,999 where the data indicates that you are more likely to be succesful again. After that price-range, the Percentage succesful drops off greatly. So, for the highest chance of having a succesful project, you should aim to spend Less than 20,000, or between 35,000 and 44,999.
+### 3. What are some limitations of this dataset?
+-A lot of this data could be more specific. For example the "backers_count" could even have a count of Genders. Then you could find trends between target audience, or something similar. 
+-There's no age data to find a target audience
+### 4. What are some other possible tables and/or graphs that we could create?
+-You could create a table that looks at the most popular show based on the "backers_count" and compare the top few for each country. 
+-We could build a graph similar to "Theater Outcomes Based on Launch Date" and compare them for each year/quater available, instead of each month. 
