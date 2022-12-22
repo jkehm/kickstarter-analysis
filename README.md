@@ -41,18 +41,25 @@ For this, we are using the =COUNTIFS() function.
 The syntax for this code is:
 >=COUNTIFS([criteria_range<sub>1</sub>, criteria<sub>1</sub>] .. [criteria_range<sub>n</sub>, criteria<sub>n</sub>)
 
-In this case, there are two different criteria that we are searching for. The first one being that it was either Succesful, Failed, or Canceled.
+In this case, there are three different criteria that we are searching for. The first one being that it was either Succesful, Failed, or Canceled.
 So the code should look like this for determining Succesful/Failed/Canceled
 >=COUNTIFS(Kickstarter!$F:$F, "=successful")
 
 The second criteria is determining which Dollar-range it will fall under. So combined the code will look like:
 >=COUNTIFS(Kickstarter!$F:$F, "=successful", Kickstarter!$D:$D, "<1000")
 
+The third criteria is determining whether or not the Subcategory is a Play. The combined code will look like:
+>=COUNTIFS(Kickstarter!$F:$F, "=successful", Kickstarter!$D:$D, "<1000", Kickstarter!$Q:$Q, "=plays")
+
 This function tells Excel to count any value if it is in Column F of the Kickstarter Worksheet (Outcome) and is equal to "succesful"
 
 AND
 
 The value of Column D in the Kickstarter Worksheet (goal) is "less than 1000".
+
+AND
+
+The value of Column Q in teh Kickstarter Worksheet (subcategory) is equal to "plays".
 
 This same pattern will continue all the way throughout this spreadsheet. Until all of the data required has been filled out.
 
@@ -72,7 +79,7 @@ I also chose the wrong style of Graph, which further changed the way the graph l
 - In general, it looks like time of year does not have a big influence on the likelihood a Theater production fails. 
 - However, there does seem to be more success in the Summer months, specifically May, June, and July when compared to the winter months.
 ### 2. What can you conclude about the Outcomes based on Goals?
-Based off of the graph, it looks like it is more likely to have a succesful film, if you do not have an overly ambitious goal. Past a price range of 20,000 it is actually more likely that the outcome will be a failure. Until, 35,000 to 44,999 where the data indicates that you are more likely to be succesful again. After that price-range, the Percentage succesful drops off greatly. So, for the highest chance of having a succesful project, you should aim to spend Less than 20,000, or between 35,000 and 44,999.
+Based off of the graph, it looks like it is more likely to have a succesful play, if you do not have an overly ambitious goal. Past a price range of 20,000 it is actually more likely that the outcome will be a failure. Until, 35,000 to 44,999 where the data indicates that you are more likely to be succesful again. After that price-range, the Percentage succesful drops off greatly. So, for the highest chance of having a succesful project, you should aim to spend Less than 20,000, or between 35,000 and 44,999.
 ### 3. What are some limitations of this dataset?
 -A lot of this data could be more specific. For example the "backers_count" could even have a count of Genders. Then you could find trends between target audience, or something similar. 
 -There's no age data to find a target audience
