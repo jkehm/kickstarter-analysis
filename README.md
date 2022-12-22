@@ -59,7 +59,7 @@ The value of Column D in the Kickstarter Worksheet (goal) is "less than 1000".
 
 AND
 
-The value of Column Q in teh Kickstarter Worksheet (subcategory) is equal to "plays".
+The value of Column Q in the Kickstarter Worksheet (subcategory) is equal to "plays".
 
 This same pattern will continue all the way throughout this spreadsheet. Until all of the data required has been filled out.
 
@@ -69,7 +69,7 @@ This same pattern will continue all the way throughout this spreadsheet. Until a
 
 I did not face any problems with the first Deliverable for the Module 1 Challenge. One thing that I could see being tricky, is making sure that the PivotTable was built correctly. Making sure that you understand what each PivotChart Field means is imperative. Plus, if a mistake is made here, it will show totally different data than if it was done correctly, and this mistake can be hard to notice.
 
-I did have some small difficulties with the second deliverable. The first mistake I made was when setting up the =COUNTIFS() function. Instead of taking some time to think through the problem, I just went ahead and started working on the problem. This caused me to make a fairly simple mistake, that changed my data totally. Instead of considering using equal to in the syntax, I just used greater than/less than. When I setup my graph I realized that it looked nothing like the one that was on the Module 1 Challenge page. I figured that I made a mistake with the syntax, so I created a quick "check" to see that all the data was being counted. I used the Count() function and added up the "total projects." Then I counted all of the entries in the Kickstarter worksheet and realized there was a huge discrepancy. That's when I realized my error. I wasn't counting the Projects that had a budget of 4999, for example. It would count to 4998, and then pickup at 5000 for the next Goal-range. 
+I did have some small difficulties with the second deliverable. The first mistake I made was when setting up the =COUNTIFS() function. Instead of taking some time to think through the problem, I just went ahead and started working on the problem. This caused me to make a fairly simple mistake, that changed my data totally. Instead of considering using equal to in the syntax, I just used greater than/less than. When I setup my graph I realized that it looked nothing like the one that was on the Module 1 Challenge page. I figured that I made a mistake with the syntax, so I created a quick "check" to see that all the data was being counted. I used the Count() function and added up the "total projects." Then I counted all of the entries in the Kickstarter worksheet (after filtering for only "plays") and realized there was a huge discrepancy. That's when I realized my error. I wasn't counting the Projects that had a budget of 4999, for example. It would count to 4998, and then pickup at 5000 for the next Goal-range. 
 
 I also chose the wrong style of Graph, which further changed the way the graph looked. But, once these small issues were changed the correct looking graph was produced.
 
