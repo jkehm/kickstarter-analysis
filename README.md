@@ -9,6 +9,8 @@ This analysis was performed using Excel, and some of the standard, but very powe
     Specifically, in Deliverable 1 we utilized the pivot table feature in Excel. We also used the Year() function to convert the raw MM/DD/YYYY format to simpy show the Year, as this is all we cared about this for the analysis (Month and days didn't matter to us). From there, the Pivot Table had to be built correctly. Most importantly, the Filters are "Parent Category" and "Years. The Legend is "Outcome", Axis is the "Date Created Conversion," and the values are the "Count of outcome". From here, you're able to create a Chart from the PivotTable. To best be able to visualize this data, I chose the Line with Markers. This way it is very easy to tell the difference at each month. 
     
     I did not face any problems with the first Deliverable for the Module 1 Challenge. One thing that I could see being tricky, is making sure that the PivotTable was built correctly. Making sure that you understand what each PivotChart Field means is imperative. Plus, if a mistake is made here, it will show totally different data than if it was done correctly, and this mistake can be hard to notice. 
+    
+    ![This is an image](https://github.com/jkehm/kickstarter-analysis/blob/main/Theater_Outcomes_vs_Launch.png)
 
 ### Analysis of Outcomes Based on Goals
 
